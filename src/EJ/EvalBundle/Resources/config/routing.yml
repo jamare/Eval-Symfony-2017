@@ -1,0 +1,18 @@
+ej_eval_homepage:
+    path:     /
+    defaults:
+        _controller: EJEvalBundle:Pages:index
+
+ej_eval_view:
+    path:    /pages/{id}
+    defaults:
+        _controller: EJEvalBundle:Pages:index
+    requirements:
+        id: \d+
+
+ej_eval_add:
+    path:      /add
+    defaults:
+        _controller: EJEvalBundle:Pages:add
+
+

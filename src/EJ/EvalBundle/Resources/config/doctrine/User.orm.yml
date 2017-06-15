@@ -1,0 +1,24 @@
+EJ\EvalBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: EJ\EvalBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+            column: Nom
+        prenom:
+            type: string
+            length: 255
+            column: Prenom
+        pseudo:
+            type: string
+            length: 255
+            column: Pseudo
+    lifecycleCallbacks: {  }

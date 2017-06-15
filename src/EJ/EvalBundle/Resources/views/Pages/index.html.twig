@@ -1,0 +1,21 @@
+{% extends "EJEvalBundle::layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Accueil {% endblock %}
+
+
+{% block body %}
+
+    <h2>Accueil :</h2>
+    <hr />
+
+    {% for items in listItems %}
+
+        <div class="box_all_items">
+            <h2>{{ items.title }}</h2>
+            <a href="{{ path('ej_eval_view', {'id':items.id}) }}">Accéder à l'article</a>
+        </div>
+
+
+    {% endfor %}
+
+{% endblock %}

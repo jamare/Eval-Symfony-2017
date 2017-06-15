@@ -1,0 +1,17 @@
+EJ\EvalBundle\Entity\event:
+    type: entity
+    table: null
+    repositoryClass: EJ\EvalBundle\Repository\eventRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        description:
+            type: text
+    lifecycleCallbacks: {  }
